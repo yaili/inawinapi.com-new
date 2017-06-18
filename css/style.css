@@ -97,6 +97,24 @@ ul, ol {
 
 /*****************
  *
+ * Media
+ *
+ *****************/
+
+ figure {
+	 margin: 2rem 0;
+	 max-width: 100%;
+ }
+ figure > img {
+	 max-width: 100%;
+ }
+ figcaption {
+	 font-size: 14px;
+	 margin: 0;
+ }
+
+/*****************
+ *
  * Articles
  *
  *****************/
@@ -179,12 +197,40 @@ main {
 	text-decoration: none;
 	padding: 16px;
 	border-radius: 1px;
-	display: block;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr;
 	height: 100%;
 	border: 1px solid #cdcdcd;
 }
 .docs-grid a:hover, .docs-grid a:active, .docs-grid a:focus {
 	box-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+
+.home-features h2 {
+	font-size: 24px;
+	margin: 0;
+}
+.home-features p {
+	font-size: 14px;
+}
+.home-features footer {
+	font-size: 12px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #666;
+	align-self: end;
+}
+
+@media screen and (min-width: 640px) {
+	.home-features ul li:nth-child(1) {
+		grid-column: 1 / span 2 ;
+	}
+	.home-features ul li:nth-child(1) > a {
+		padding-left: calc(50% + 24px);
+	}
 }
 
 /*****************
