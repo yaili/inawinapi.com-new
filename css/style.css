@@ -1,0 +1,289 @@
+body {
+	font-family: 'Merriweather', Georgia, serif;
+	font-weight: 300;
+	background: #FFF;
+	padding: 1rem;
+	margin: 0;
+}
+
+/*****************
+ *
+ * Links
+ *
+ *****************/
+
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #666;
+}
+a:hover, a:active, a:focus {
+	color: #2b3acd;
+}
+
+/*****************
+ *
+ * Typography
+ *
+ *****************/
+
+p, li {
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 1.25;
+	margin: 0;
+}
+* + h1 {
+	margin-top: 24px;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 1.15384615;
+	margin-bottom: 24px;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 1.13636364;
+	margin-bottom: 24px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 1.11111111;
+	margin-bottom: 24px;
+}
+
+ul, ol {
+	padding-left: 1.5rem;
+}
+
+/*****************
+ *
+ * Articles
+ *
+ *****************/
+
+article {
+	margin: 1rem auto 2rem;
+	max-width: 50rem;
+	border-bottom: 1px solid #cdcdcd;
+}
+
+article > header {
+	max-width: 36rem;
+	margin: 0 auto;
+}
+
+article > header > h1 {
+	margin-bottom: .3rem;
+}
+
+article > time {
+	font-size: .825em;
+}
+
+.article-image {
+	margin: 2rem 0;
+}
+.article-image>img {
+	margin: 0;
+	display: block;
+}
+
+.caption {
+	font-style: italic;
+	font-size: 14px;
+}
+
+.article-content {
+	max-width: 36rem;
+	margin: 0 auto;
+}
+
+.more-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*****************
+ *
+ * Sections
+ *
+ *****************/
+
+.more {
+	max-width: 50rem;
+	margin: 0 auto;
+}
+
+/*****************
+ *
+ * Navigation
+ *
+ *****************/
+
+ .site-name {
+ 	overflow: hidden;
+ }
+ .site-avatar {
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 3.5rem;
+	height: 3.5rem;
+	border: 3px solid #111;
+	padding: 4px;
+	float: left;
+	margin-right: .5rem;
+}
+.site-name h1 {
+	font-size: 18px;
+	margin-top: .8rem;
+}
+.site-name h2 {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+}
+
+body > header {
+	margin: 1.5rem -1rem 2rem;
+}
+
+nav {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #f7f7f7;
+	padding: .5rem;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	margin: 0 .5rem;
+	display: inline-block;
+}
+nav a:link, nav a:visited {
+	padding: .3rem 0;
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+
+.nav-active {
+	font-weight: 700;
+}
+
+@media screen and (min-width: 840px) {
+	.site-name {
+		max-width: 50rem;
+		margin: auto;
+	}
+	nav ul {
+		max-width: 50rem;
+		margin: auto;
+	}
+}
+
+/*****************
+ *
+ * Footer
+ *
+ *****************/
+
+body > footer {
+	padding: 2rem 0;
+	margin: 0 auto;
+	max-width: 50rem;
+	border-top: 1px solid #cdcdcd;
+	color: #666;
+}
+
+footer > ul {
+	margin: 0;
+	padding: 0;
+}
+footer > ul > li {
+	display: inline;
+	margin-right: 1rem;
+	font-size: 14px;
+}
+footer a {
+	padding: 0 0 0 1.3rem;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.social-twitter {
+	background-image: url(../img/icon-twitter.svg);
+}
+.social-facebook {
+	background-image: url(../img/icon-facebook.svg);
+}
+
+/*****************
+ *
+ * Social buttons
+ *
+ *****************/
+
+.share {
+	margin: 0 0 1em;
+	padding: 0 0 .5em 0;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	border: 1px solid #cdcdcd;
+	border-width: 1px 0;
+}
+.share p {
+	margin-bottom: .5em;
+}
+.share ul {
+	margin: 0;
+	padding: 0;
+}
+.share li {
+		-moz-border-radius: 2px;
+		-o-border-radius: 2px;
+		-webkit-border-radius: 2px;
+	border-radius: 2px;
+	list-style: none;
+	display: inline-block;
+	margin-bottom: .5em;
+	background: #F7F7F7;
+}
+.share li a {
+	display: inline-block;
+	padding: .4rem .6rem;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: .5rem center;
+}
+.share .share-twitter {
+	background-image: url(../img/icon-twitter.svg);
+	padding-left: 2rem;
+}
+.share .share-facebook {
+	background-image: url(../img/icon-facebook.svg);
+	padding-left: 2rem;
+}
+.share .share-googleplus {
+	background-image: url(../img/icon-googleplus.svg);
+	padding-left: 2rem;
+}
