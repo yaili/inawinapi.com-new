@@ -75,7 +75,7 @@ ul, ol {
 }
 
 .pull-quote {
-	margin: 2rem 0;
+	margin: 4rem;
 }
 .pull-quote > p {
 	font-size: 18px;
@@ -101,17 +101,17 @@ ul, ol {
  *
  *****************/
 
- figure {
-	 margin: 2rem 0;
+figure {
+	margin: 2rem 0;
+	max-width: 100%;
+}
+figure > img {
 	 max-width: 100%;
- }
- figure > img {
-	 max-width: 100%;
- }
- figcaption {
-	 font-size: 14px;
-	 margin: 0;
- }
+}
+figcaption {
+	font-size: 14px;
+	margin: 0;
+}
 
 /*****************
  *
@@ -169,7 +169,7 @@ article > time {
  *****************/
 
 main {
-	margin: 1rem auto 2rem;
+	margin: 2rem auto;
 	max-width: 50rem;
 }
 
@@ -269,13 +269,12 @@ main {
 }
 
 body > header {
-	margin: 1.5rem -1rem 2rem;
+	margin: 2rem 0 2.5rem;
 }
 
 nav {
 	font-family: 'Source Sans Pro', sans-serif;
-	background: #f7f7f7;
-	padding: .5rem 1rem;
+	font-weight: 700;
 }
 nav ul {
 	list-style: none;
@@ -292,8 +291,12 @@ nav li:last-of-type {
 nav a:link, nav a:visited {
 	padding: .3rem 0;
 	display: block;
-	color: #333;
+	color: #111;
 	text-decoration: none;
+}
+nav a:hover, nav a:active, nav a:focus {
+	text-decoration: underline;
+	color: #196aaf;
 }
 
 .nav-active {
@@ -303,7 +306,7 @@ nav a:link, nav a:visited {
 @media screen and (min-width: 840px) {
 	.site-name {
 		max-width: 50rem;
-		margin: auto;
+		margin: 1rem auto;
 	}
 	nav {
 		padding: .5rem;
