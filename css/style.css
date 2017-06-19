@@ -75,8 +75,9 @@ ul, ol {
 }
 
 .pull-quote {
-	margin: 4rem;
+	margin: 1rem;
 }
+
 .pull-quote > p {
 	font-size: 18px;
 	margin: 0;
@@ -93,6 +94,12 @@ ul, ol {
 	position: absolute;
 	left: 0;
 	top: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+	.pull-quote {
+		margin: 4rem;
+	}
 }
 
 /*****************
@@ -244,7 +251,7 @@ main {
 }
 .site-name a:link, .site-name a:visited {
 	text-decoration: none;
-	color: #333;
+	color: #111;
 }
 .site-avatar {
 		-moz-border-radius: 50%;
@@ -340,6 +347,10 @@ footer > ul > li {
 	margin-right: 1rem;
 	font-size: 14px;
 }
+footer > ul > li:first-of-type {
+	display: block;
+	margin-bottom: .5rem;
+}
 footer a {
 	padding: 0 0 0 1.3rem;
 	background-size: 16px;
@@ -351,6 +362,12 @@ footer a {
 }
 .social-facebook {
 	background-image: url(../img/icon-facebook.svg);
+}
+
+@media screen and (min-width: 460px) {
+	footer > ul > li:first-of-type {
+		display: inline;
+	}
 }
 
 /*****************
