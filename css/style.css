@@ -296,18 +296,20 @@ nav li:last-of-type {
 	margin-right: 0;
 }
 nav a:link, nav a:visited {
-	padding: .3rem 0;
+	padding: .2rem 0 0;
+	margin-bottom: .4rem;
 	display: block;
 	color: #111;
 	text-decoration: none;
+	border-bottom: 2px solid transparent;
 }
 nav a:hover, nav a:active, nav a:focus {
 	text-decoration: underline;
 	color: #196aaf;
 }
 
-.nav-active {
-	font-weight: 700;
+.nav-active:link, .nav-active:visited {
+	border-bottom-color: #111;
 }
 
 @media screen and (min-width: 840px) {
